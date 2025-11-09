@@ -1,4 +1,3 @@
-// Espera a que todo el contenido HTML de la página esté cargado
 document.addEventListener("DOMContentLoaded", function() {
     const botonesVerMas = document.querySelectorAll('.btn-ver-mas');
 
@@ -21,5 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
 
 });
