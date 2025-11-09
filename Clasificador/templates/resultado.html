@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Clasificación</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado de la Predicción:</h1>
+        
+        <h2>{{ clase_predicha }}</h2>
+        
+        <p class="stats">
+            Intensidad de Color: <strong>{{ intensidad_val }}</strong><br>
+            Contraste: <strong>{{ contraste_val }}</strong>
+        </p>
+        
+        <img src="{{ url_for('static', filename='uploads/' + imagen_url.split('/')[-1]) }}" alt="Imagen analizada">
+        
+        <br>
+        <a href="/">Clasificar otra imagen</a>
+    </div>
+</body>
+</html>

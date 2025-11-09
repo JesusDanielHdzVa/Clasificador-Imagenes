@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificador de Imágenes</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">     
+    
+    <header>
+        <a href="#inicio" class="logo">
+            <span><br>Clasificador de<br>imágenes</span>
+        </a>
+        <nav>
+            <a href="#tecnologias">Tecnologias</a>
+            <a href="#funcionamiento">¿Cómo funciona?</a>
+            <a href="#clasificador">Clasificador de objetos</a>
+        </nav>
+    </header>
+</head>
+<body>
+
+    <section class="home" id="inicio">
+        <div class="home-img">
+            <img src="{{ url_for('static', filename='media/logo.jpeg') }}">
+        </div>
+        <div class="home-content">
+            <h1><a>Esto es el <span class="energia-span">Clasificador de imágenes</span></a></h1>
+            <p>
+                El <span class="energia-span">Clasificador de objetos</span> es una herramienta avanzada que utiliza técnicas de aprendizaje automático para analizar y categorizar imágenes. Con solo subir una imagen, el sistema procesa la información visual y determina a qué categoría pertenece, ya sea <span class="energia-span">vegetación, urbanización, piel, madera o roca</span>, proporcionando resultados precisos y rápidos.
+            </p>
+            <a href="#tecnologias" class="btn">Tecnologias Utilizadas</a>
+            <a href="#funcionamiento" class="btn">Como Funciona</a>
+            <a href="#clasificador" class="btn">Clasificador de objetos</a>
+        </div>
+    </section>
+
+    <section class="seccion-general" id="tecnologias">
+        <h1>Que tecnologias se usaron en el <span class="energia-span">Clasificador de imagenes</span></h1>
+        <p class="seccion-descripcion">
+            Nuestro proyecto funciona con distintas tecnologías, tanto para la web como para el análisis de datos las mas destacadas fueron.
+        </p>
+        
+        <div class="productos-grid">
+            
+            <div class="producto-card">
+                <img src="{{ url_for('static', filename='media/html.png') }}">
+                <div class="card-content">
+                    <p class="categoria">Desarrollo Web</p>
+                    <h3>HTML</h3>
+                    <p class="desc-corta">Es el esqueleto de la página web, define la estructura...</p>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                    <div class="desc-completa">
+                        <p>HTML Es el esqueleto de la página web, define la estructura las etiquetas, el texto, fue el encargado de permitirnos tener texto en la web incluso este texto es gracias a HTML</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="{{ url_for('static', filename='media/cs.png') }}">
+                <div class="card-content">
+                    <p class="categoria">Desarrollo Web</p>
+                    <h3>CSS</h3>
+                    <p class="desc-corta">Da estilo y diseño a la página web, haciendo que se vea atractiva...</p>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                    <div class="desc-completa">
+                        <p>CSS Da estilo y diseño a la página web, haciendo que se vea atractiva, esta nos permitite mostrar los colores, las imagenes, textos de color, o los aumentos de tamaño cuando se les pasa por encima</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="{{ url_for('static', filename='media/flask.jpeg') }}">
+                <div class="card-content">
+                    <p class="categoria">Framework</p>
+                    <h3>Flask</h3>
+                    <p class="desc-corta">Un framework que utilizamos para que Python...</p>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                    <div class="desc-completa">
+                        <p>Flask Un framework que utilizamos para que Python, se pudiera comunicar con el HTML, mas debajo esta el clasificador de imagenes el cual fue desarrollado 100% por python, este sirve como un puente entre python y HTML</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="{{ url_for('static', filename='media/python.png') }}">
+                <div class="card-content">
+                    <p class="categoria"> Analisis de datos</p>
+                    <h3>Python</h3>
+                    <p class="desc-corta">El lenguaje de programación principal para el análisis de datos...</p>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                    <div class="desc-completa">
+                        <p>El lenguaje de programación principal para el análisis de datos, con este usamos distintas librerias, las cuales nos permitieron hacer el clasificador de objetos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="{{ url_for('static', filename='media/excel.jpeg') }}">
+                <div class="card-content">
+                    <p class="categoria">Análisis de Datos</p>
+                    <h3>Excel</h3>
+                    <p class="desc-corta">Herramienta usada para organizar y pre-analizar los datos...</p>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                    <div class="desc-completa">
+                        <p>Antes de entrenar un modelo, usamos Excel para la recopilación y limpieza inicial de las etiquetas de nuestras imágenes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto-card">
+                <img src="{{ url_for('static', filename='media/postgre.png') }}">
+                <div class="card-content">
+                    <p class="categoria">Base de Datos</p>
+                    <h3>PostgreSQL</h3>
+                    <p class="desc-corta">Nuestra base de datos para almacenar los datos de entrenamiento...</p>
+                    <a href="#" class="btn-ver-mas">Ver más</a>
+                    <div class="desc-completa">
+                        <p>PostGre es la base de datos que utilizamos para almacenar los datos de entrenamiento, estos se guardaron en un tabla, con tres columnas, clase, intensidad, textura</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="seccion-info" id="funcionamiento">
+        <h1>¿Cómo Funciona el <span class="energia-span">Clasificador de imagenes</span>?</h1>
+        <div class="info">
+            <p class="seccion-descripcion">
+                Nuestro proyecto funciona con distintas tecnologías, tanto para la web como para el análisis de datos. Sin embargo esta misma el analisis de datos fue la principal ya que nuestro proyecto funciona medianta un arbol de decisiones el cual fue entrenado con distintas imagenes las cuales fueron analizadas y etiquetadas con sus respectivas clases, intensidad y contraste. <br><br>
+                El proceso de clasificación de imágenes se lleva a cabo en varios pasos clave:
+                <br><br>
+                <strong>Subida de Imagen:</strong> El usuario sube una imagen a través de la interfaz web.
+                <strong>
+                <br>Preprocesamiento:</strong> La imagen se procesa para extraer características relevantes como intensidad de color y contraste.
+                <strong><br>Clasificación:</strong> Estas características se ingresan en un modelo de árbol de decisiones previamente entrenado, que analiza los datos y determina la categoría a la que pertenece la imagen.
+                <strong><br>Resultado:</strong> Finalmente, el sistema muestra al usuario la categoría predicha junto con las características analizadas.
+            </p>
+            <div class="info-img">
+                <img src="{{ url_for('static', filename='media/arbol.png') }}">
+            </div>
+        </div>
+       </section>
+    
+    <section class="seccion-general" id="clasificador">
+        <h1>Clasificador de <span class="energia-span">Imagenes</span></h1>
+        <div class="container">
+            <p class="seccion-descripcion">Sube una imagen para que el modelo la analice y determine si es vegetación, urbana, piel, madera o roca.</p>
+
+            <form action="/predict#clasificador" method="POST" enctype="multipart/form-data">
+                
+                <label for="imagen">Selecciona una imagen:</label>
+
+                <input type="file" name="imagen" id="imagen" accept="image/png, image/jpeg, image/bmp" required>
+                
+                <button type="submit" class="btn">Clasificar Imagen</button>
+                
+            </form>
+        </div>
+    
+        {% if clase_predicha %}
+        <div class="container" id="resultado-container">
+            <h1>Resultado de la Predicción:</h1>
+            
+            <h2>{{ clase_predicha }}</h2>
+            
+            <p class="stats">
+                Intensidad de Color: <strong>{{ intensidad_val }}</strong><br>
+                Contraste: <strong>{{ contraste_val }}</strong>
+            </p>
+            
+            <img src="{{ url_for('static', filename='uploads/' + imagen_url.split('/')[-1]) }}" alt="Imagen analizada">
+            
+            <br>
+            <a href="/">Clasificar otra imagen</a>
+        </div>
+        {% endif %}
+    </section>
+        
+
+    <section class="seccion-general" id="contacto">
+        <h1><span class="energia-span">Contactanos</span></h1>
+        <p class="seccion-descripcion">
+            ¿Tienes dudas sobre el proyecto? ¿Quieres colaborar?
+            Envíanos un mensaje y te responderemos a la brevedad.
+        </p>
+        <div class="form-container">
+            <form action="#">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Ej: Duda sobre el modelo, Colaboración">
+                </div>
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</body>
+</html>
